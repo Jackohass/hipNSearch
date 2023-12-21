@@ -1,0 +1,6 @@
+﻿  "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe"
+  Microsoft (R) Incremental Linker Version 14.37.32826.1
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  "/OUT:D:\projects\master_thesis\programs\hipNSearch\build\demo\Release\Demo.exe" /INCREMENTAL:NO "/LIBPATH:C:\Program Files\AMD\ROCm\5.5\lib" msvcrt.lib amdhip64.lib "-NODEFAULTLIB:libcmt" ..\Release\cuNSearch.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed "/PDB:D:/projects/master_thesis/programs/hipNSearch/build/demo/Release/Demo.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental "/LTCGOUT:Demo.dir\Release\Demo.iobj" /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:D:/projects/master_thesis/programs/hipNSearch/build/demo/Release/Demo.lib" /MACHINE:X64 /machine:x64 Demo.dir\Release\main.cu.hip.obj 
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+  Demo.vcxproj -> D:\projects\master_thesis\programs\hipNSearch\build\demo\Release\Demo.exe

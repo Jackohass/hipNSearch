@@ -1,5 +1,5 @@
 #pragma once
-#include "Types.h"
+#include "Types.h.hip"
 #include "PointSet.h"
 #include <thrust/device_vector.h>
 

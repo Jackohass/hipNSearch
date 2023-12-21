@@ -8,9 +8,5 @@ namespace cuNSearch
 	typedef unsigned int uint;
 	typedef unsigned char byte;
 
-#ifdef CUNSEARCH_USE_DOUBLE_PRECISION
-	using Real = double;
-#else
 	using Real = float;
-#endif
 }

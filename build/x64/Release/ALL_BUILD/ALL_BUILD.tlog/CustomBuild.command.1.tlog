@@ -1,0 +1,10 @@
+^D:\PROJECTS\MASTER_THESIS\PROGRAMS\HIPNSEARCH\CMAKELISTS.TXT
+setlocal
+"E:\Program Files\CMake\bin\cmake.exe" -SD:/projects/master_thesis/programs/hipNSearch -BD:/projects/master_thesis/programs/hipNSearch/build --check-stamp-file D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

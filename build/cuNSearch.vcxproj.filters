@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\Utils\Timing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\Utils\IDFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\include\PointSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\include\ActivationTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\include\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\include\cuNSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchDeviceData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\GridInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\NotImplementedException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\PointSetImplementation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\Utils\cuda_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\Utils\Timing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\Utils\IDFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\projects\master_thesis\programs\hipNSearch\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchKernels.cuh.hip" />
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\Utils\cuda_helper.cu.hip">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearch.cu.hip">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchDeviceData.cu.hip">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchKernels.cu.hip">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\helper_linearIndex.h.hip">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\helper_mortonCode.h.hip">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\PointSet.cu.hip">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\PointSetImplementation.cu.hip">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\Types.h.hip">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0CF7C754-A504-3827-A352-B24799B65A32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{011E4BC5-BF01-3C70-A663-007171B4B865}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

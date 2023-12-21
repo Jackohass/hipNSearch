@@ -1,0 +1,632 @@
+clang version 18.0.0
+Target: nvptx64-nvidia-cuda
+Thread model: posix
+InstalledDir:
+clang version 18.0.0
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:/Program Files/AMD/ROCm/5.5/bin
+Found CUDA installation: E:\Program Files\CUDA, version 11.6
+Found HIP installation: C:\Program Files\AMD\ROCm\5.5\, version 5.5.0
+clang Invocation:
+ "C:/Program Files/AMD/ROCm/5.5/bin/clang++.exe" "-cc1" "-triple" "x86_64-pc-windows-msvc19.10.0" "-target-sdk-version=11.6" "-fcuda-allow-variadic-functions" "-aux-triple" "nvptx64-nvidia-cuda" "-fsyntax-only" "-disable-free" "-clear-ast-before-backend" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "PointSet.cu.hip" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-ffp-contract=on" "-fno-rounding-math" "-mconstructor-aliases" "-funwind-tables=2" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-fdebug-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-v" "-fcoverage-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-resource-dir" "D:/llvm-project/build/Release/lib/clang/18" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include\\cuda_wrappers" "-include" "__clang_cuda_runtime_wrapper.h" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/um" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/shared" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt" "-I" "D:\\projects\\master_thesis\\programs\\hipNSearch\\src" "-D" "_MT" "-D" "_DLL" "-D" "WIN32" "-D" "WIN64" "-D" "_WINDOWS" "-D" "NDEBUG" "-D" "CMAKE_INTDIR=/Release/" "-D" "_DEBUG_FUNCTIONAL_MACHINERY" "-I" "D:/projects/master_thesis/programs/hipNSearch/include" "-I" "D:/projects/master_thesis/programs/hipNSearch/Utils" "-I" "D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "E:\\Program Files\\CUDA/include" "-Wno-pragma-once-outside-header" "-Wall" "-Wmicrosoft" "-Wno-invalid-token-paste" "-Wno-unknown-pragmas" "-Wno-unused-value" "-std=c++14" "-fdeprecated-macro" "-ferror-limit" "19" "-fmessage-length=120" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.10" "-fcxx-exceptions" "-fexceptions" "-fcolor-diagnostics" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include" "-faddrsig" "-x" "cuda" "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\hippiy\\PointSet.cu.hip"
+
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/um"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/shared"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "D:/llvm-project/build/Release/lib/clang/18\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:\projects\master_thesis\programs\hipNSearch\src
+ D:/projects/master_thesis/programs/hipNSearch/include
+ D:/projects/master_thesis/programs/hipNSearch/Utils
+ D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include
+ D:/llvm-project/build/Release/lib/clang/18\include\cuda_wrappers
+ D:/llvm-project/build/Release/lib/clang/18\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt
+ E:\Program Files\CUDA/include
+End of search list.
+In file included from D:\projects\master_thesis\programs\hipNSearch\build\hippiy\PointSet.cu.hip:2:
+In file included from D:\projects\master_thesis\programs\hipNSearch\src\PointSetImplementation.h:2:
+D:\projects\master_thesis\programs\hipNSearch\src\Types.h:7:9: warning: CUDA_VERSION=11060 [-W#pragma-messages]
+    7 | #pragma message(VAR_NAME_VALUE(CUDA_VERSION))
+      |         ^
+1 warning generated when compiling for host.
+
+[HIPIFY] info: file 'D:\projects\master_thesis\programs\hipNSearch\src\PointSet.cu' statistics:
+  CONVERTED refs count: 0
+  UNCONVERTED refs count: 0
+  CONVERSION %: 0.0
+  REPLACED bytes: 0
+  TOTAL bytes: 883
+  CHANGED lines of code: 1
+  TOTAL lines of code: 39
+  CODE CHANGED (in bytes) %: 0.0
+  CODE CHANGED (in lines) %: 2.6
+  TIME ELAPSED s: 1.39
+clang version 18.0.0
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:/Program Files/AMD/ROCm/5.5/bin
+Found CUDA installation: E:\Program Files\CUDA, version 11.6
+Found HIP installation: C:\Program Files\AMD\ROCm\5.5\, version 5.5.0
+clang Invocation:
+ "C:/Program Files/AMD/ROCm/5.5/bin/clang++.exe" "-cc1" "-triple" "x86_64-pc-windows-msvc19.10.0" "-target-sdk-version=11.6" "-fcuda-allow-variadic-functions" "-aux-triple" "nvptx64-nvidia-cuda" "-fsyntax-only" "-disable-free" "-clear-ast-before-backend" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "cuNSearchKernels.cu.hip" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-ffp-contract=on" "-fno-rounding-math" "-mconstructor-aliases" "-funwind-tables=2" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-fdebug-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-v" "-fcoverage-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-resource-dir" "D:/llvm-project/build/Release/lib/clang/18" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include\\cuda_wrappers" "-include" "__clang_cuda_runtime_wrapper.h" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/um" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/shared" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt" "-I" "D:\\projects\\master_thesis\\programs\\hipNSearch\\src" "-D" "_MT" "-D" "_DLL" "-D" "WIN32" "-D" "WIN64" "-D" "_WINDOWS" "-D" "NDEBUG" "-D" "CMAKE_INTDIR=/Release/" "-D" "_DEBUG_FUNCTIONAL_MACHINERY" "-I" "D:/projects/master_thesis/programs/hipNSearch/include" "-I" "D:/projects/master_thesis/programs/hipNSearch/Utils" "-I" "D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "E:\\Program Files\\CUDA/include" "-Wno-pragma-once-outside-header" "-Wall" "-Wmicrosoft" "-Wno-invalid-token-paste" "-Wno-unknown-pragmas" "-Wno-unused-value" "-std=c++14" "-fdeprecated-macro" "-ferror-limit" "19" "-fmessage-length=120" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.10" "-fcxx-exceptions" "-fexceptions" "-fcolor-diagnostics" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include" "-faddrsig" "-x" "cuda" "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\hippiy\\cuNSearchKernels.cu.hip"
+
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/um"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/shared"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "D:/llvm-project/build/Release/lib/clang/18\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:\projects\master_thesis\programs\hipNSearch\src
+ D:/projects/master_thesis/programs/hipNSearch/include
+ D:/projects/master_thesis/programs/hipNSearch/Utils
+ D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include
+ D:/llvm-project/build/Release/lib/clang/18\include\cuda_wrappers
+ D:/llvm-project/build/Release/lib/clang/18\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt
+ E:\Program Files\CUDA/include
+End of search list.
+In file included from D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearchKernels.cu.hip:1:
+In file included from D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchKernels.cuh:3:
+D:\projects\master_thesis\programs\hipNSearch\src\Types.h:7:9: warning: CUDA_VERSION=11060 [-W#pragma-messages]
+    7 | #pragma message(VAR_NAME_VALUE(CUDA_VERSION))
+      |         ^
+1 warning generated when compiling for host.
+
+[HIPIFY] info: file 'D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchKernels.cu' statistics:
+  CONVERTED refs count: 17
+  UNCONVERTED refs count: 0
+  CONVERSION %: 100.0
+  REPLACED bytes: 0
+  TOTAL bytes: 7738
+  CHANGED lines of code: 1
+  TOTAL lines of code: 233
+  CODE CHANGED (in bytes) %: 0.0
+  CODE CHANGED (in lines) %: 0.4
+  TIME ELAPSED s: 0.42
+[HIPIFY] info: CONVERTED refs by type:
+  device_function: 17
+[HIPIFY] info: CONVERTED refs by API:
+  CUDA RT API: 17
+[HIPIFY] info: CONVERTED refs by names:
+  atomicAdd: 2
+  atomicMax: 3
+  atomicMin: 3
+  floor: 9
+clang version 18.0.0
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:/Program Files/AMD/ROCm/5.5/bin
+Found CUDA installation: E:\Program Files\CUDA, version 11.6
+Found HIP installation: C:\Program Files\AMD\ROCm\5.5\, version 5.5.0
+clang Invocation:
+ "C:/Program Files/AMD/ROCm/5.5/bin/clang++.exe" "-cc1" "-triple" "x86_64-pc-windows-msvc19.10.0" "-target-sdk-version=11.6" "-fcuda-allow-variadic-functions" "-aux-triple" "nvptx64-nvidia-cuda" "-fsyntax-only" "-disable-free" "-clear-ast-before-backend" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "PointSetImplementation.cu.hip" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-ffp-contract=on" "-fno-rounding-math" "-mconstructor-aliases" "-funwind-tables=2" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-fdebug-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-v" "-fcoverage-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-resource-dir" "D:/llvm-project/build/Release/lib/clang/18" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include\\cuda_wrappers" "-include" "__clang_cuda_runtime_wrapper.h" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/um" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/shared" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt" "-I" "D:\\projects\\master_thesis\\programs\\hipNSearch\\src" "-D" "_MT" "-D" "_DLL" "-D" "WIN32" "-D" "WIN64" "-D" "_WINDOWS" "-D" "NDEBUG" "-D" "CMAKE_INTDIR=/Release/" "-D" "_DEBUG_FUNCTIONAL_MACHINERY" "-I" "D:/projects/master_thesis/programs/hipNSearch/include" "-I" "D:/projects/master_thesis/programs/hipNSearch/Utils" "-I" "D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "E:\\Program Files\\CUDA/include" "-Wno-pragma-once-outside-header" "-Wall" "-Wmicrosoft" "-Wno-invalid-token-paste" "-Wno-unknown-pragmas" "-Wno-unused-value" "-std=c++14" "-fdeprecated-macro" "-ferror-limit" "19" "-fmessage-length=120" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.10" "-fcxx-exceptions" "-fexceptions" "-fcolor-diagnostics" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include" "-faddrsig" "-x" "cuda" "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\hippiy\\PointSetImplementation.cu.hip"
+
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/um"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/shared"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "D:/llvm-project/build/Release/lib/clang/18\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:\projects\master_thesis\programs\hipNSearch\src
+ D:/projects/master_thesis/programs/hipNSearch/include
+ D:/projects/master_thesis/programs/hipNSearch/Utils
+ D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include
+ D:/llvm-project/build/Release/lib/clang/18\include\cuda_wrappers
+ D:/llvm-project/build/Release/lib/clang/18\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt
+ E:\Program Files\CUDA/include
+End of search list.
+In file included from D:\projects\master_thesis\programs\hipNSearch\build\hippiy\PointSetImplementation.cu.hip:1:
+In file included from D:\projects\master_thesis\programs\hipNSearch\src\PointSetImplementation.h:2:
+D:\projects\master_thesis\programs\hipNSearch\src\Types.h:7:9: warning: CUDA_VERSION=11060 [-W#pragma-messages]
+    7 | #pragma message(VAR_NAME_VALUE(CUDA_VERSION))
+      |         ^
+1 warning generated when compiling for host.
+
+[HIPIFY] info: file 'D:\projects\master_thesis\programs\hipNSearch\src\PointSetImplementation.cu' statistics:
+  CONVERTED refs count: 0
+  UNCONVERTED refs count: 0
+  CONVERSION %: 0.0
+  REPLACED bytes: 0
+  TOTAL bytes: 1220
+  CHANGED lines of code: 1
+  TOTAL lines of code: 44
+  CODE CHANGED (in bytes) %: 0.0
+  CODE CHANGED (in lines) %: 2.3
+  TIME ELAPSED s: 1.41
+clang version 18.0.0
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:/Program Files/AMD/ROCm/5.5/bin
+Found CUDA installation: E:\Program Files\CUDA, version 11.6
+Found HIP installation: C:\Program Files\AMD\ROCm\5.5\, version 5.5.0
+clang Invocation:
+ "C:/Program Files/AMD/ROCm/5.5/bin/clang++.exe" "-cc1" "-triple" "x86_64-pc-windows-msvc19.10.0" "-target-sdk-version=11.6" "-fcuda-allow-variadic-functions" "-aux-triple" "nvptx64-nvidia-cuda" "-fsyntax-only" "-disable-free" "-clear-ast-before-backend" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "cuNSearch.cu.hip" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-ffp-contract=on" "-fno-rounding-math" "-mconstructor-aliases" "-funwind-tables=2" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-fdebug-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-v" "-fcoverage-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-resource-dir" "D:/llvm-project/build/Release/lib/clang/18" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include\\cuda_wrappers" "-include" "__clang_cuda_runtime_wrapper.h" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/um" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/shared" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt" "-I" "D:\\projects\\master_thesis\\programs\\hipNSearch\\src" "-D" "_MT" "-D" "_DLL" "-D" "WIN32" "-D" "WIN64" "-D" "_WINDOWS" "-D" "NDEBUG" "-D" "CMAKE_INTDIR=/Release/" "-D" "_DEBUG_FUNCTIONAL_MACHINERY" "-I" "D:/projects/master_thesis/programs/hipNSearch/include" "-I" "D:/projects/master_thesis/programs/hipNSearch/Utils" "-I" "D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "E:\\Program Files\\CUDA/include" "-Wno-pragma-once-outside-header" "-Wall" "-Wmicrosoft" "-Wno-invalid-token-paste" "-Wno-unknown-pragmas" "-Wno-unused-value" "-std=c++14" "-fdeprecated-macro" "-ferror-limit" "19" "-fmessage-length=120" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.10" "-fcxx-exceptions" "-fexceptions" "-fcolor-diagnostics" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include" "-faddrsig" "-x" "cuda" "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\hippiy\\cuNSearch.cu.hip"
+
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/um"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/shared"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "D:/llvm-project/build/Release/lib/clang/18\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:\projects\master_thesis\programs\hipNSearch\src
+ D:/projects/master_thesis/programs/hipNSearch/include
+ D:/projects/master_thesis/programs/hipNSearch/Utils
+ D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include
+ D:/llvm-project/build/Release/lib/clang/18\include\cuda_wrappers
+ D:/llvm-project/build/Release/lib/clang/18\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt
+ E:\Program Files\CUDA/include
+End of search list.
+D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearch.cu.hip:27:9: warning: 'PRINT_STATS' macro redefined
+      [-Wmacro-redefined]
+   27 | #define PRINT_STATS false
+      |         ^
+D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearch.cu.hip:24:9: note: previous definition is here
+   24 | #define PRINT_STATS true
+      |         ^
+D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearch.cu.hip:28:9: warning: 'USE_TIMING' macro redefined
+      [-Wmacro-redefined]
+   28 | #define USE_TIMING(x)
+      |         ^
+D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearch.cu.hip:25:9: note: previous definition is here
+   25 | #define USE_TIMING(x) x;
+      |         ^
+In file included from D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearch.cu.hip:33:
+In file included from D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchDeviceData.h:2:
+D:\projects\master_thesis\programs\hipNSearch\src\Types.h:7:9: warning: CUDA_VERSION=11060 [-W#pragma-messages]
+    7 | #pragma message(VAR_NAME_VALUE(CUDA_VERSION))
+      |         ^
+3 warnings generated when compiling for host.
+
+[HIPIFY] info: file 'D:\projects\master_thesis\programs\hipNSearch\src\cuNSearch.cu' statistics:
+  CONVERTED refs count: 1
+  UNCONVERTED refs count: 0
+  CONVERSION %: 100.0
+  REPLACED bytes: 16
+  TOTAL bytes: 3722
+  CHANGED lines of code: 1
+  TOTAL lines of code: 160
+  CODE CHANGED (in bytes) %: 0.4
+  CODE CHANGED (in lines) %: 0.6
+  TIME ELAPSED s: 1.48
+[HIPIFY] info: CONVERTED refs by type:
+  include_cuda_main_header: 1
+[HIPIFY] info: CONVERTED refs by API:
+  CUDA RT API: 1
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime.h: 1
+clang version 18.0.0
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:/Program Files/AMD/ROCm/5.5/bin
+Found CUDA installation: E:\Program Files\CUDA, version 11.6
+Found HIP installation: C:\Program Files\AMD\ROCm\5.5\, version 5.5.0
+clang Invocation:
+ "C:/Program Files/AMD/ROCm/5.5/bin/clang++.exe" "-cc1" "-triple" "x86_64-pc-windows-msvc19.10.0" "-target-sdk-version=11.6" "-fcuda-allow-variadic-functions" "-aux-triple" "nvptx64-nvidia-cuda" "-fsyntax-only" "-disable-free" "-clear-ast-before-backend" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "cuNSearchKernels.cuh.hip" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-ffp-contract=on" "-fno-rounding-math" "-mconstructor-aliases" "-funwind-tables=2" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-fdebug-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-v" "-fcoverage-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-resource-dir" "D:/llvm-project/build/Release/lib/clang/18" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include\\cuda_wrappers" "-include" "__clang_cuda_runtime_wrapper.h" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/um" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/shared" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt" "-I" "D:\\projects\\master_thesis\\programs\\hipNSearch\\src" "-D" "_MT" "-D" "_DLL" "-D" "WIN32" "-D" "WIN64" "-D" "_WINDOWS" "-D" "NDEBUG" "-D" "CMAKE_INTDIR=/Release/" "-D" "_DEBUG_FUNCTIONAL_MACHINERY" "-I" "D:/projects/master_thesis/programs/hipNSearch/include" "-I" "D:/projects/master_thesis/programs/hipNSearch/Utils" "-I" "D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "E:\\Program Files\\CUDA/include" "-Wno-pragma-once-outside-header" "-Wall" "-Wmicrosoft" "-Wno-invalid-token-paste" "-Wno-unknown-pragmas" "-Wno-unused-value" "-std=c++14" "-fdeprecated-macro" "-ferror-limit" "19" "-fmessage-length=120" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.10" "-fcxx-exceptions" "-fexceptions" "-fcolor-diagnostics" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include" "-faddrsig" "-x" "cuda" "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\hippiy\\cuNSearchKernels.cuh.hip"
+
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/um"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/shared"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "D:/llvm-project/build/Release/lib/clang/18\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:\projects\master_thesis\programs\hipNSearch\src
+ D:/projects/master_thesis/programs/hipNSearch/include
+ D:/projects/master_thesis/programs/hipNSearch/Utils
+ D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include
+ D:/llvm-project/build/Release/lib/clang/18\include\cuda_wrappers
+ D:/llvm-project/build/Release/lib/clang/18\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt
+ E:\Program Files\CUDA/include
+End of search list.
+In file included from D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearchKernels.cuh.hip:3:
+D:\projects\master_thesis\programs\hipNSearch\src\Types.h:7:9: warning: CUDA_VERSION=11060 [-W#pragma-messages]
+    7 | #pragma message(VAR_NAME_VALUE(CUDA_VERSION))
+      |         ^
+1 warning generated when compiling for host.
+
+[HIPIFY] info: file 'D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchKernels.cuh' statistics:
+  CONVERTED refs count: 1
+  UNCONVERTED refs count: 0
+  CONVERSION %: 100.0
+  REPLACED bytes: 16
+  TOTAL bytes: 1551
+  CHANGED lines of code: 1
+  TOTAL lines of code: 67
+  CODE CHANGED (in bytes) %: 1.0
+  CODE CHANGED (in lines) %: 1.5
+  TIME ELAPSED s: 0.39
+[HIPIFY] info: CONVERTED refs by type:
+  include_cuda_main_header: 1
+[HIPIFY] info: CONVERTED refs by API:
+  CUDA RT API: 1
+[HIPIFY] info: CONVERTED refs by names:
+  cuda_runtime.h: 1
+clang version 18.0.0
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:/Program Files/AMD/ROCm/5.5/bin
+Found CUDA installation: E:\Program Files\CUDA, version 11.6
+Found HIP installation: C:\Program Files\AMD\ROCm\5.5\, version 5.5.0
+clang Invocation:
+ "C:/Program Files/AMD/ROCm/5.5/bin/clang++.exe" "-cc1" "-triple" "x86_64-pc-windows-msvc19.10.0" "-target-sdk-version=11.6" "-fcuda-allow-variadic-functions" "-aux-triple" "nvptx64-nvidia-cuda" "-fsyntax-only" "-disable-free" "-clear-ast-before-backend" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "cuNSearchDeviceData.cu.hip" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-ffp-contract=on" "-fno-rounding-math" "-mconstructor-aliases" "-funwind-tables=2" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-fdebug-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-v" "-fcoverage-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-resource-dir" "D:/llvm-project/build/Release/lib/clang/18" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include\\cuda_wrappers" "-include" "__clang_cuda_runtime_wrapper.h" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/um" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/shared" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt" "-I" "D:\\projects\\master_thesis\\programs\\hipNSearch\\src" "-D" "_MT" "-D" "_DLL" "-D" "WIN32" "-D" "WIN64" "-D" "_WINDOWS" "-D" "NDEBUG" "-D" "CMAKE_INTDIR=/Release/" "-D" "_DEBUG_FUNCTIONAL_MACHINERY" "-I" "D:/projects/master_thesis/programs/hipNSearch/include" "-I" "D:/projects/master_thesis/programs/hipNSearch/Utils" "-I" "D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "E:\\Program Files\\CUDA/include" "-Wno-pragma-once-outside-header" "-Wall" "-Wmicrosoft" "-Wno-invalid-token-paste" "-Wno-unknown-pragmas" "-Wno-unused-value" "-std=c++14" "-fdeprecated-macro" "-ferror-limit" "19" "-fmessage-length=120" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.10" "-fcxx-exceptions" "-fexceptions" "-fcolor-diagnostics" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include" "-faddrsig" "-x" "cuda" "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\hippiy\\cuNSearchDeviceData.cu.hip"
+
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/um"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/shared"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "D:/llvm-project/build/Release/lib/clang/18\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:\projects\master_thesis\programs\hipNSearch\src
+ D:/projects/master_thesis/programs/hipNSearch/include
+ D:/projects/master_thesis/programs/hipNSearch/Utils
+ D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include
+ D:/llvm-project/build/Release/lib/clang/18\include\cuda_wrappers
+ D:/llvm-project/build/Release/lib/clang/18\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt
+ E:\Program Files\CUDA/include
+End of search list.
+In file included from D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearchDeviceData.cu.hip:1:
+In file included from D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchDeviceData.h:2:
+D:\projects\master_thesis\programs\hipNSearch\src\Types.h:7:9: warning: CUDA_VERSION=11060 [-W#pragma-messages]
+    7 | #pragma message(VAR_NAME_VALUE(CUDA_VERSION))
+      |         ^
+D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearchDeviceData.cu.hip:15:9: warning: 'PRINT_STATS' macro
+      redefined [-Wmacro-redefined]
+   15 | #define PRINT_STATS false
+      |         ^
+D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearchDeviceData.cu.hip:12:9: note: previous definition is
+      here
+   12 | #define PRINT_STATS true
+      |         ^
+D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearchDeviceData.cu.hip:16:9: warning: 'USE_TIMING' macro
+      redefined [-Wmacro-redefined]
+   16 | #define USE_TIMING(x)
+      |         ^
+D:\projects\master_thesis\programs\hipNSearch\build\hippiy\cuNSearchDeviceData.cu.hip:13:9: note: previous definition is
+      here
+   13 | #define USE_TIMING(x) x;
+      |         ^
+3 warnings generated when compiling for host.
+
+[HIPIFY] info: file 'D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchDeviceData.cu' statistics:
+  CONVERTED refs count: 7
+  UNCONVERTED refs count: 0
+  CONVERSION %: 100.0
+  REPLACED bytes: 88
+  TOTAL bytes: 11105
+  CHANGED lines of code: 8
+  TOTAL lines of code: 293
+  CODE CHANGED (in bytes) %: 0.8
+  CODE CHANGED (in lines) %: 2.7
+  TIME ELAPSED s: 1.66
+[HIPIFY] info: CONVERTED refs by type:
+  memory: 7
+[HIPIFY] info: CONVERTED refs by API:
+  CUDA RT API: 7
+[HIPIFY] info: CONVERTED refs by names:
+  cudaFreeHost: 3
+  cudaMallocHost: 3
+  cudaMemset: 1
+clang version 18.0.0
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:/Program Files/AMD/ROCm/5.5/bin
+Found CUDA installation: E:\Program Files\CUDA, version 11.6
+Found HIP installation: C:\Program Files\AMD\ROCm\5.5\, version 5.5.0
+clang Invocation:
+ "C:/Program Files/AMD/ROCm/5.5/bin/clang++.exe" "-cc1" "-triple" "x86_64-pc-windows-msvc19.10.0" "-target-sdk-version=11.6" "-fcuda-allow-variadic-functions" "-aux-triple" "nvptx64-nvidia-cuda" "-fsyntax-only" "-disable-free" "-clear-ast-before-backend" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "cuda_helper.cu.hip" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-ffp-contract=on" "-fno-rounding-math" "-mconstructor-aliases" "-funwind-tables=2" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-fdebug-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-v" "-fcoverage-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-resource-dir" "D:/llvm-project/build/Release/lib/clang/18" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include\\cuda_wrappers" "-include" "__clang_cuda_runtime_wrapper.h" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/um" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/shared" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt" "-I" "D:\\projects\\master_thesis\\programs\\hipNSearch\\Utils" "-D" "_MT" "-D" "_DLL" "-D" "WIN32" "-D" "WIN64" "-D" "_WINDOWS" "-D" "NDEBUG" "-D" "CMAKE_INTDIR=/Release/" "-D" "_DEBUG_FUNCTIONAL_MACHINERY" "-I" "D:/projects/master_thesis/programs/hipNSearch/include" "-I" "D:/projects/master_thesis/programs/hipNSearch/Utils" "-I" "D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "E:\\Program Files\\CUDA/include" "-Wno-pragma-once-outside-header" "-Wall" "-Wmicrosoft" "-Wno-invalid-token-paste" "-Wno-unknown-pragmas" "-Wno-unused-value" "-std=c++14" "-fdeprecated-macro" "-ferror-limit" "19" "-fmessage-length=120" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.10" "-fcxx-exceptions" "-fexceptions" "-fcolor-diagnostics" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include" "-faddrsig" "-x" "cuda" "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\hippiy\\cuda_helper.cu.hip"
+
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/um"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/shared"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include"
+ignoring duplicate directory "D:/projects/master_thesis/programs/hipNSearch/Utils"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "D:/llvm-project/build/Release/lib/clang/18\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:\projects\master_thesis\programs\hipNSearch\Utils
+ D:/projects/master_thesis/programs/hipNSearch/include
+ D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include
+ D:/llvm-project/build/Release/lib/clang/18\include\cuda_wrappers
+ D:/llvm-project/build/Release/lib/clang/18\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt
+ E:\Program Files\CUDA/include
+End of search list.
+
+[HIPIFY] info: file 'D:\projects\master_thesis\programs\hipNSearch\Utils\cuda_helper.cu' statistics:
+  CONVERTED refs count: 17
+  UNCONVERTED refs count: 0
+  CONVERSION %: 100.0
+  REPLACED bytes: 241
+  TOTAL bytes: 1687
+  CHANGED lines of code: 11
+  TOTAL lines of code: 65
+  CODE CHANGED (in bytes) %: 14.3
+  CODE CHANGED (in lines) %: 16.9
+  TIME ELAPSED s: 1.17
+[HIPIFY] info: CONVERTED refs by type:
+  error: 3
+  device: 1
+  memory: 2
+  include_cuda_main_header: 1
+  type: 4
+  numeric_literal: 6
+[HIPIFY] info: CONVERTED refs by API:
+  CUDA RT API: 17
+[HIPIFY] info: CONVERTED refs by names:
+  cudaDeviceSynchronize: 1
+  cudaError_t: 4
+  cudaGetErrorString: 2
+  cudaGetLastError: 1
+  cudaMemcpy: 2
+  cudaMemcpyDeviceToHost: 1
+  cudaMemcpyHostToDevice: 1
+  cudaSuccess: 4
+  cuda_runtime.h: 1
+clang version 18.0.0
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:/Program Files/AMD/ROCm/5.5/bin
+Found CUDA installation: E:\Program Files\CUDA, version 11.6
+Found HIP installation: C:\Program Files\AMD\ROCm\5.5\, version 5.5.0
+clang Invocation:
+ "C:/Program Files/AMD/ROCm/5.5/bin/clang++.exe" "-cc1" "-triple" "x86_64-pc-windows-msvc19.10.0" "-target-sdk-version=11.6" "-fcuda-allow-variadic-functions" "-aux-triple" "nvptx64-nvidia-cuda" "-fsyntax-only" "-disable-free" "-clear-ast-before-backend" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "main.cu.hip" "-mrelocation-model" "pic" "-pic-level" "2" "-mframe-pointer=none" "-fmath-errno" "-ffp-contract=on" "-fno-rounding-math" "-mconstructor-aliases" "-funwind-tables=2" "-target-cpu" "x86-64" "-tune-cpu" "generic" "-fdebug-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-v" "-fcoverage-compilation-dir=D:\\projects\\master_thesis\\programs\\hipNSearch\\build" "-resource-dir" "D:/llvm-project/build/Release/lib/clang/18" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include\\cuda_wrappers" "-include" "__clang_cuda_runtime_wrapper.h" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include" "-isystem" "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/um" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/shared" "-isystem" "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt" "-isystem" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt" "-I" "D:\\projects\\master_thesis\\programs\\hipNSearch\\demo" "-D" "_MT" "-D" "_DLL" "-D" "WIN32" "-D" "WIN64" "-D" "_WINDOWS" "-D" "NDEBUG" "-D" "CMAKE_INTDIR=/Release/" "-D" "_DEBUG_FUNCTIONAL_MACHINERY" "-I" "D:/projects/master_thesis/programs/hipNSearch/include" "-I" "D:/projects/master_thesis/programs/hipNSearch/Utils" "-I" "D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "D:/llvm-project/build/Release/lib/clang/18\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\include" "-internal-isystem" "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\atlmfc\\include" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt" "-internal-isystem" "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt" "-internal-isystem" "E:\\Program Files\\CUDA/include" "-Wno-pragma-once-outside-header" "-Wall" "-Wmicrosoft" "-Wno-invalid-token-paste" "-Wno-unknown-pragmas" "-Wno-unused-value" "-std=c++14" "-fdeprecated-macro" "-ferror-limit" "19" "-fmessage-length=120" "-fno-use-cxa-atexit" "-fms-extensions" "-fms-compatibility" "-fms-compatibility-version=19.10" "-fcxx-exceptions" "-fexceptions" "-fcolor-diagnostics" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/../include/hipify" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include/cuda_wrappers" "-internal-isystem" "D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release/include" "-faddrsig" "-x" "cuda" "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\hippiy\\main.cu.hip"
+
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/ucrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/um"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/shared"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/8.1/Include/winrt"
+ignoring nonexistent directory "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/cppwinrt"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/../include/hipify"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include/cuda_wrappers"
+ignoring nonexistent directory "D:\projects\master_thesis\programs\HIPIFY\build\Release/include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "D:/llvm-project/build/Release/lib/clang/18\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\include"
+ignoring duplicate directory "E:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.37.32822\atlmfc\include"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt"
+ignoring duplicate directory "C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:\projects\master_thesis\programs\hipNSearch\demo
+ D:/projects/master_thesis/programs/hipNSearch/include
+ D:/projects/master_thesis/programs/hipNSearch/Utils
+ D:/projects/master_thesis/programs/hipNSearch/build/cuNSearch
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/atlmfc/include
+ E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/VS/include
+ D:/llvm-project/build/Release/lib/clang/18\include\cuda_wrappers
+ D:/llvm-project/build/Release/lib/clang/18\include
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\winrt
+ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\cppwinrt
+ E:\Program Files\CUDA/include
+End of search list.
+
+[HIPIFY] info: file 'D:\projects\master_thesis\programs\hipNSearch\Demo\main.cu' statistics:
+  CONVERTED refs count: 0
+  UNCONVERTED refs count: 0
+  CONVERSION %: 0.0
+  REPLACED bytes: 0
+  TOTAL bytes: 3209
+  CHANGED lines of code: 1
+  TOTAL lines of code: 122
+  CODE CHANGED (in bytes) %: 0.0
+  CODE CHANGED (in lines) %: 0.8
+  TIME ELAPSED s: 0.85
+
+[HIPIFY] info: file 'GLOBAL' statistics:
+  CONVERTED refs count: 43
+  UNCONVERTED refs count: 0
+  CONVERSION %: 100.0
+  REPLACED bytes: 361
+  TOTAL bytes: 31115
+  CHANGED lines of code: 25
+  TOTAL lines of code: 1023
+  CODE CHANGED (in bytes) %: 1.2
+  CODE CHANGED (in lines) %: 2.4
+  TIME ELAPSED s: 8.82
+[HIPIFY] info: CONVERTED refs by type:
+  error: 3
+  device: 1
+  memory: 9
+  device_function: 17
+  include_cuda_main_header: 3
+  type: 4
+  numeric_literal: 6
+[HIPIFY] info: CONVERTED refs by API:
+  CUDA RT API: 43
+[HIPIFY] info: CONVERTED refs by names:
+  atomicAdd: 2
+  atomicMax: 3
+  atomicMin: 3
+  cudaDeviceSynchronize: 1
+  cudaError_t: 4
+  cudaFreeHost: 3
+  cudaGetErrorString: 2
+  cudaGetLastError: 1
+  cudaMallocHost: 3
+  cudaMemcpy: 2
+  cudaMemcpyDeviceToHost: 1
+  cudaMemcpyHostToDevice: 1
+  cudaMemset: 1
+  cudaSuccess: 4
+  cuda_runtime.h: 3
+  floor: 9
+
+[HIPIFY] info: TOTAL statistics:
+  CONVERTED files: 8
+  PROCESSED files: 8

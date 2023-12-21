@@ -1,0 +1,38 @@
+# CMake generation dependency list for this directory.
+D:/projects/master_thesis/programs/hipNSearch/CMakeLists.txt
+D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CMakeCUDACompiler.cmake
+D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CMakeCXXCompiler.cmake
+D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CMakeRCCompiler.cmake
+D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CMakeSystem.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCUDAInformation.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeRCInformation.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CheckCompilerFlag.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/CheckSourceCompiles.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/MSVC-CXX.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/MSVC.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA-CUDA.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/GenerateExportHeader.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC-CXX.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-NVIDIA-CUDA.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
+E:/Program Files/CMake/share/cmake-3.28/Modules/exportheader.cmake.in

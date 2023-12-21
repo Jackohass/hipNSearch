@@ -1,0 +1,519 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.7.2+d6990bcfa for .NET Framework
+      Build started 2023-11-20 12:58:19.
+      
+      Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.77
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCUDACompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags: --keep;--keep-dir;tmp -v
+      
+      The output was:
+      0
+      MSBuild version 17.7.2+d6990bcfa for .NET Framework
+      Build started 2023-11-20 12:58:20.
+      
+      Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdCUDA.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild".
+      AddCudaCompileDeps:
+        E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=6 /D_MBCS /I"E:\\Program Files\\CUDA\\include" /I"E:\\Program Files\\CUDA\\bin" /I"E:\\Program Files\\CUDA\\include" /I. /FIcuda_runtime.h /c D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu 
+      Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (1) is building "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+      CudaBuildCore:
+        Compiling CUDA source file CMakeCUDACompilerId.cu...
+        Creating directory "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\x64\\Debug".
+        cmd.exe /C "C:\\Users\\Jacob\\AppData\\Local\\Temp\\tmp4ac09dbfed45499d8477b79f0b389cec.cmd"
+        "E:\\Program Files\\CUDA\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu   -I"E:\\Program Files\\CUDA\\include" -I"E:\\Program Files\\CUDA\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc143.pdb /FS /Zi /RTC1 /MDd " -o D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu"
+        
+        D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA>"E:\\Program Files\\CUDA\\bin\\nvcc.exe" -gencode=arch=compute_52,code=\\"sm_52,compute_52\\" --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu   -I"E:\\Program Files\\CUDA\\include" -I"E:\\Program Files\\CUDA\\include"  -G   --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\\vc143.pdb /FS /Zi /RTC1 /MDd " -o D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" 
+        #$ _NVVM_BRANCH_=nvvm
+        #$ _SPACE_= 
+        #$ _CUDART_=cudart
+        #$ _HERE_=E:\\Program Files\\CUDA\\bin
+        #$ _THERE_=E:\\Program Files\\CUDA\\bin
+        #$ _TARGET_SIZE_=
+        #$ _TARGET_DIR_=
+        #$ _TARGET_SIZE_=64
+        #$ _WIN_PLATFORM_=x64
+        #$ TOP=E:\\Program Files\\CUDA\\bin/..
+        #$ NVVMIR_LIBRARY_DIR=E:\\Program Files\\CUDA\\bin/../nvvm/libdevice
+        #$ PATH=E:\\Program Files\\CUDA\\bin/../nvvm/bin;E:\\Program Files\\CUDA\\bin;E:\\Program Files\\CUDA\\bin/../lib;E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64;;C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86;;E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\tools;E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\ide;C:\\Program Files (x86)\\HTML Help Workshop;;E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64;C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\;E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\;;E:\\Program Files\\CUDA\\bin;E:\\Program Files\\CUDA\\libnvvp;;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\AMD\\ROCm\\5.5\\bin;E:\\Program Files\\CMake\\bin;E:\\Program from zips\\ninja-win;D:\\projects\\master_thesis\\programs\\HIPIFY\\build\\Release;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2023.2.2\\;D:\\llvm-project\\build\\Release\\bin;E:\\Strawberry\\c\\bin;E:\\Strawberry\\perl\\site\\bin;E:\\Strawberry\\perl\\bin;C:\\Program Files\\dotnet\\;C:\\Users\\Jacob\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Jacob\\.dotnet\\tools;
+        #$ INCLUDES="-IE:\\Program Files\\CUDA\\bin/../include"  
+        #$ LIBRARIES=  "/LIBPATH:E:\\Program Files\\CUDA\\bin/../lib/x64"
+        #$ CUDAFE_FLAGS=--sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"
+        #$ PTXAS_FLAGS=
+        CMakeCUDACompilerId.cu
+        #$ cl.exe @"C:\\Users\\Jacob\\AppData\\Local\\Temp/tmpxft_0000616c_00000000-9.res" > "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-8_CMakeCUDACompilerId.cpp1.ii" 
+        CMakeCUDACompilerId.cu
+        #$ erase C:\\Users\\Jacob\\AppData\\Local\\Temp/tmpxft_0000616c_00000000-9.res
+        #$ cicc --microsoft_version=1937 --msvc_target_version=1937 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_0000616c_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.ptx"
+        #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-10_CMakeCUDACompilerId.sm_52.cubin" 
+        #$ fatbinary -64 --ident="D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-4_CMakeCUDACompilerId.fatbin.c" 
+        #$ erase C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-4_CMakeCUDACompilerId.fatbin
+        #$ cl.exe @"C:\\Users\\Jacob\\AppData\\Local\\Temp/tmpxft_0000616c_00000000-11.res" > "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        CMakeCUDACompilerId.cu
+        #$ erase C:\\Users\\Jacob\\AppData\\Local\\Temp/tmpxft_0000616c_00000000-11.res
+        #$ cudafe++ --microsoft_version=1937 --msvc_target_version=1937 --compiler_bindir "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.37.32822/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\\Program Files (x86)\\Windows Kits\\10" --m64 --parse_templates --gen_c_file_name "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/Jacob/AppData/Local/Temp/tmpxft_0000616c_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+        #$ cl.exe @"C:\\Users\\Jacob\\AppData\\Local\\Temp/tmpxft_0000616c_00000000-12.res" -Fo"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
+        tmpxft_0000616c_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
+        #$ erase C:\\Users\\Jacob\\AppData\\Local\\Temp/tmpxft_0000616c_00000000-12.res
+      Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (CudaBuildCore target(s)).
+      Link:
+        E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\\Program Files\\CUDA\\lib\\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCUDA.lib" /MACHINE:X64 "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\x64\\Debug\\CMakeCUDACompilerId.cu.obj"
+           Creating library .\\CompilerIdCUDA.lib and object .\\CompilerIdCUDA.exp
+        CompilerIdCUDA.vcxproj -> D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.exe
+      PostBuildEvent:
+        echo CMAKE_CUDA_COMPILER=E:\\Program Files\\CUDA\\bin\\nvcc.exe
+        :VCEnd
+        CMAKE_CUDA_COMPILER=E:\\Program Files\\CUDA\\bin\\nvcc.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCUDA.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCUDA.tlog\\CompilerIdCUDA.lastbuildstate".
+      Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\3.28.0-rc3\\CompilerIdCUDA\\CompilerIdCUDA.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:05.05
+      
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exe"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exp"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.lib"
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.vcxproj"
+      
+      The CUDA compiler identification is NVIDIA, found in:
+        D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/3.28.0-rc3/CompilerIdCUDA/CompilerIdCUDA.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-oqo73b"
+      binary: "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-oqo73b"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-oqo73b'
+        
+        Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_29d64.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.7.2+d6990bcfa for .NET Framework
+        Build started 2023-11-20 12:58:25.
+        
+        Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oqo73b\\cmTC_29d64.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_29d64.dir\\Debug\\".
+          Creating directory "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oqo73b\\Debug\\".
+          Creating directory "cmTC_29d64.dir\\Debug\\cmTC_29d64.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_29d64.dir\\Debug\\cmTC_29d64.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_29d64.dir\\Debug\\cmTC_29d64.tlog\\unsuccessfulbuild".
+        ClCompile:
+          E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_29d64.dir\\Debug\\\\" /Fd"cmTC_29d64.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32826.1 for x64
+          CMakeCXXCompilerABI.cpp
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_29d64.dir\\Debug\\\\" /Fd"cmTC_29d64.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oqo73b\\Debug\\cmTC_29d64.exe" /INCREMENTAL /ILK:"cmTC_29d64.dir\\Debug\\cmTC_29d64.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-oqo73b/Debug/cmTC_29d64.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-oqo73b/Debug/cmTC_29d64.lib" /MACHINE:X64  /machine:x64 cmTC_29d64.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_29d64.vcxproj -> D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oqo73b\\Debug\\cmTC_29d64.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_29d64.dir\\Debug\\cmTC_29d64.tlog\\unsuccessfulbuild".
+          Touching "cmTC_29d64.dir\\Debug\\cmTC_29d64.tlog\\cmTC_29d64.lastbuildstate".
+        Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oqo73b\\cmTC_29d64.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.61
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CUDA compiler ABI info"
+    directories:
+      source: "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm"
+      binary: "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_CUDA_RUNTIME_LIBRARY: "Static"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CUDA_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm'
+        
+        Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0eb09.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.7.2+d6990bcfa for .NET Framework
+        Build started 2023-11-20 12:58:26.
+        
+        Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0eb09.dir\\Debug\\".
+          Creating directory "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\Debug\\".
+          Creating directory "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\unsuccessfulbuild".
+        AddCudaCompileDeps:
+          E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=6 /D_WINDOWS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"E:\\Program Files\\CUDA\\bin" /I"E:\\Program Files\\CUDA\\include" /I. /FIcuda_runtime.h /c "E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCUDACompilerABI.cu" 
+        Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (1) is building "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).
+        CudaBuildCore:
+          Compiling CUDA source file E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCUDACompilerABI.cu...
+          cmd.exe /C "C:\\Users\\Jacob\\AppData\\Local\\Temp\\tmp0525fa07ec7d4e7fa3c73c82d930df10.cmd"
+          "E:\\Program Files\\CUDA\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu    -I"E:\\Program Files\\CUDA\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FdcmTC_0eb09.dir\\Debug\\vc143.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_0eb09.dir\\Debug\\CMakeCUDACompilerABI.obj "E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCUDACompilerABI.cu"
+          
+          D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm>"E:\\Program Files\\CUDA\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu    -I"E:\\Program Files\\CUDA\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FdcmTC_0eb09.dir\\Debug\\vc143.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_0eb09.dir\\Debug\\CMakeCUDACompilerABI.obj "E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCUDACompilerABI.cu" 
+        cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+          CMakeCUDACompilerABI.cu
+        cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+          CMakeCUDACompilerABI.cu
+          CMakeCUDACompilerABI.cu
+        cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+        E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+        Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (CudaBuildCore target(s)).
+        Link:
+          E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\Debug\\cmTC_0eb09.exe" /INCREMENTAL /ILK:"cmTC_0eb09.dir\\Debug\\cmTC_0eb09.ilk" /NOLOGO /LIBPATH:"E:\\Program Files\\CUDA\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm/Debug/cmTC_0eb09.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm/Debug/cmTC_0eb09.lib" /MACHINE:X64  /machine:x64 -v cmTC_0eb09.dir\\Debug\\CMakeCUDACompilerABI.obj
+        LINK : warning LNK4044: unrecognized option '/v'; ignored [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+             Creating library D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm/Debug/cmTC_0eb09.lib and object D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm/Debug/cmTC_0eb09.exp
+          cmTC_0eb09.vcxproj -> D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\Debug\\cmTC_0eb09.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\unsuccessfulbuild".
+          Touching "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\cmTC_0eb09.lastbuildstate".
+        Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (default target) (1) ->
+        "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (CudaBuildCore target) (1:2) ->
+        (CudaBuildCore target) -> 
+          cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+          cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+          E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+        
+        
+        "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4044: unrecognized option '/v'; ignored [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]
+        
+            5 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.54
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CUDA implicit include dir info: rv=start
+        warn: unable to parse implicit include dirs!
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CUDA implicit link information:
+        link line regex: [^( *|.*[/\\])(link\\.exe|link\\.exe|lld-link|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm']
+        ignore line: []
+        ignore line: [Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0eb09.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n]
+        ignore line: [MSBuild version 17.7.2+d6990bcfa for .NET Framework]
+        ignore line: [Build started 2023-11-20 12:58:26.]
+        ignore line: []
+        ignore line: [Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" on node 1 (default targets).]
+        ignore line: [PrepareForBuild:]
+        ignore line: [  Creating directory "cmTC_0eb09.dir\\Debug\\".]
+        ignore line: [  Creating directory "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\Debug\\".]
+        ignore line: [  Creating directory "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\".]
+        ignore line: [InitializeBuildStatus:]
+        ignore line: [  Creating "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.]
+        ignore line: [  Touching "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\unsuccessfulbuild".]
+        ignore line: [AddCudaCompileDeps:]
+        ignore line: [  E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=6 /D_WINDOWS /DCMAKE_INTDIR="Debug" /D_MBCS /DCMAKE_INTDIR="Debug" /I"E:\\Program Files\\CUDA\\bin" /I"E:\\Program Files\\CUDA\\include" /I. /FIcuda_runtime.h /c "E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCUDACompilerABI.cu" ]
+        ignore line: [Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (1) is building "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (1:2) on node 1 (CudaBuildCore target(s)).]
+        ignore line: [CudaBuildCore:]
+        ignore line: [  Compiling CUDA source file E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCUDACompilerABI.cu...]
+        ignore line: [  cmd.exe /C "C:\\Users\\Jacob\\AppData\\Local\\Temp\\tmp0525fa07ec7d4e7fa3c73c82d930df10.cmd"]
+        ignore line: [  "E:\\Program Files\\CUDA\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu    -I"E:\\Program Files\\CUDA\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FdcmTC_0eb09.dir\\Debug\\vc143.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_0eb09.dir\\Debug\\CMakeCUDACompilerABI.obj "E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCUDACompilerABI.cu"]
+        ignore line: [  ]
+        ignore line: [  D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm>"E:\\Program Files\\CUDA\\bin\\nvcc.exe"  --use-local-env -ccbin "E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64" -x cu    -I"E:\\Program Files\\CUDA\\include"     --keep-dir x64\\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\\"Debug\\"" -D_MBCS -D"CMAKE_INTDIR=\\"Debug\\"" -Xcompiler "/EHsc /W3 /nologo /Od /FdcmTC_0eb09.dir\\Debug\\vc143.pdb /FS /Zi /RTC1 /MDd /GR" -o cmTC_0eb09.dir\\Debug\\CMakeCUDACompilerABI.obj "E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCUDACompilerABI.cu" ]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [  CMakeCUDACompilerABI.cu]
+        ignore line: [cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: [E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: [Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (CudaBuildCore target(s)).]
+        ignore line: [Link:]
+        ignore line: [  E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\Debug\\cmTC_0eb09.exe" /INCREMENTAL /ILK:"cmTC_0eb09.dir\\Debug\\cmTC_0eb09.ilk" /NOLOGO /LIBPATH:"E:\\Program Files\\CUDA\\lib\\x64" cudadevrt.lib cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm/Debug/cmTC_0eb09.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm/Debug/cmTC_0eb09.lib" /MACHINE:X64  /machine:x64 -v cmTC_0eb09.dir\\Debug\\CMakeCUDACompilerABI.obj]
+        ignore line: [LINK : warning LNK4044: unrecognized option '/v']
+        ignore line: [ ignored [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: [     Creating library D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm/Debug/cmTC_0eb09.lib and object D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-xm4chm/Debug/cmTC_0eb09.exp]
+        ignore line: [  cmTC_0eb09.vcxproj -> D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\Debug\\cmTC_0eb09.exe]
+        ignore line: [FinalizeBuildStatus:]
+        ignore line: [  Deleting file "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\unsuccessfulbuild".]
+        ignore line: [  Touching "cmTC_0eb09.dir\\Debug\\cmTC_0eb09.tlog\\cmTC_0eb09.lastbuildstate".]
+        ignore line: [Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (default targets).]
+        ignore line: []
+        ignore line: [Build succeeded.]
+        ignore line: []
+        ignore line: ["D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (default target) (1) ->]
+        ignore line: ["D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (CudaBuildCore target) (1:2) ->]
+        ignore line: [(CudaBuildCore target) -> ]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: [  cl : Command line warning D9002: ignoring unknown option '-v' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: [  E:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCompilerCUDAArch.h(10): warning C4305: 'return': truncation from 'int' to 'bool' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: []
+        ignore line: []
+        ignore line: ["D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj" (default target) (1) ->]
+        ignore line: [(Link target) -> ]
+        ignore line: [  LINK : warning LNK4044: unrecognized option '/v']
+        ignore line: [ ignored [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xm4chm\\cmTC_0eb09.vcxproj]]
+        ignore line: []
+        ignore line: [    5 Warning(s)]
+        ignore line: [    0 Error(s)]
+        ignore line: []
+        ignore line: [Time Elapsed 00:00:01.54]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "CMakeLists.txt:71 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-71sm16"
+      binary: "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-71sm16"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-71sm16'
+        
+        Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f1bc1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.7.2+d6990bcfa for .NET Framework
+        Build started 2023-11-20 12:58:29.
+        
+        Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f1bc1.dir\\Debug\\".
+          Creating directory "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\Debug\\".
+          Creating directory "cmTC_f1bc1.dir\\Debug\\cmTC_f1bc1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f1bc1.dir\\Debug\\cmTC_f1bc1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f1bc1.dir\\Debug\\cmTC_f1bc1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_f1bc1.dir\\Debug\\\\" /Fd"cmTC_f1bc1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32826.1 for x64
+          src.cxx
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_f1bc1.dir\\Debug\\\\" /Fd"cmTC_f1bc1.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx"
+        D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+        D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+        D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,33): error C2062: type 'int' unexpected [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+        D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+        D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+        D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+        Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+          D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+          D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,33): error C2062: type 'int' unexpected [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+          D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+          D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+          D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-71sm16\\cmTC_f1bc1.vcxproj]
+        
+            0 Warning(s)
+            6 Error(s)
+        
+        Time Elapsed 00:00:00.23
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/GenerateExportHeader.cmake:269 (_check_cxx_compiler_attribute)"
+      - "E:/Program Files/CMake/share/cmake-3.28/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "CMakeLists.txt:71 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED"
+    directories:
+      source: "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-0iotvi"
+      binary: "D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-0iotvi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-0iotvi'
+        
+        Run Build Command(s): "E:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5af7b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.7.2+d6990bcfa for .NET Framework
+        Build started 2023-11-20 12:58:30.
+        
+        Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\cmTC_5af7b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_5af7b.dir\\Debug\\".
+          Creating directory "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\Debug\\".
+          Creating directory "cmTC_5af7b.dir\\Debug\\cmTC_5af7b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_5af7b.dir\\Debug\\cmTC_5af7b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5af7b.dir\\Debug\\cmTC_5af7b.tlog\\unsuccessfulbuild".
+        ClCompile:
+          E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_5af7b.dir\\Debug\\\\" /Fd"cmTC_5af7b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32826.1 for x64
+          src.cxx
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++14 /Fo"cmTC_5af7b.dir\\Debug\\\\" /Fd"cmTC_5af7b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\src.cxx"
+        D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\src.cxx(2,25): warning C4996: 'somefunc': was declared deprecated [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\cmTC_5af7b.vcxproj]
+        Link:
+          E:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\Debug\\cmTC_5af7b.exe" /INCREMENTAL /ILK:"cmTC_5af7b.dir\\Debug\\cmTC_5af7b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-0iotvi/Debug/cmTC_5af7b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/CMakeScratch/TryCompile-0iotvi/Debug/cmTC_5af7b.lib" /MACHINE:X64  /machine:x64 cmTC_5af7b.dir\\Debug\\src.obj
+          cmTC_5af7b.vcxproj -> D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\Debug\\cmTC_5af7b.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_5af7b.dir\\Debug\\cmTC_5af7b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5af7b.dir\\Debug\\cmTC_5af7b.tlog\\cmTC_5af7b.lastbuildstate".
+        Done Building Project "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\cmTC_5af7b.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\cmTC_5af7b.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\src.cxx(2,25): warning C4996: 'somefunc': was declared deprecated [D:\\projects\\master_thesis\\programs\\hipNSearch\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0iotvi\\cmTC_5af7b.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.43
+        
+      exitCode: 0
+...

@@ -1,0 +1,6 @@
+D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/cuNSearch.dir
+D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/INSTALL.dir
+D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/ALL_BUILD.dir
+D:/projects/master_thesis/programs/hipNSearch/build/CMakeFiles/ZERO_CHECK.dir
+D:/projects/master_thesis/programs/hipNSearch/build/demo/CMakeFiles/Demo.dir
+D:/projects/master_thesis/programs/hipNSearch/build/demo/CMakeFiles/INSTALL.dir

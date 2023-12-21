@@ -1,5 +1,5 @@
 #pragma once
-#include "Types.h"
+#include "Types.h.hip"
 #include "GridInfo.h"
 #include <thrust/device_vector.h>
 #include "cuda_helper.h"

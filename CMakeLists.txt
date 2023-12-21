@@ -37,26 +37,26 @@ set (INCLUDE_HEADERS
 )
 
 set (HEADER_FILES
-	src/Types.h
+	src/Types.h.hip
 	src/cuNSearchDeviceData.h
 	src/GridInfo.h
 	src/NotImplementedException.h
 	src/PointSetImplementation.h
-	src/cuNSearchKernels.cuh
-	src/helper_linearIndex.h
-	src/helper_mortonCode.h
+	src/cuNSearchKernels.cuh.hip
+	src/helper_linearIndex.h.hip
+	src/helper_mortonCode.h.hip
 	Utils/cuda_helper.h
 	Utils/Timing.h
 	Utils/IDFactory.h
 )
 
 set (SOURCE_FILES
-	src/PointSet.cu
-	src/PointSetImplementation.cu
-	src/cuNSearch.cu
-	src/cuNSearchDeviceData.cu
-	src/cuNSearchKernels.cu
-	Utils/cuda_helper.cu
+	src/PointSet.cu.hip
+	src/PointSetImplementation.cu.hip
+	src/cuNSearch.cu.hip
+	src/cuNSearchDeviceData.cu.hip
+	src/cuNSearchKernels.cu.hip
+	Utils/cuda_helper.cu.hip
 	Utils/Timing.cpp
 	Utils/IDFactory.cpp
 )

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB044F4A-8BA3-3C5D-853E-D07AE6136CA5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>hipNSearch</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+	<UseDebugLibraries>true</UseDebugLibraries>
+	<WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>HIP_clang</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+	<UseDebugLibraries>false</UseDebugLibraries>
+	<WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>HIP_clang</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Condition="'$(PlatformToolset)'=='HIP_clang'" Project="$(VCTargetsPath)\AMD.HIP.Clang.Common.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="HIP_clang" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OffloadArch>gfx1030;gfx1100;gfx1101;gfx1102</OffloadArch>
+  </PropertyGroup>
+  <PropertyGroup Label="HIP_clang" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OffloadArch>gfx1030;gfx1100;gfx1101;gfx1102</OffloadArch>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\projects\master_thesis\programs\hipNSearch\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cuNSearch.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cuNSearch_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\projects\master_thesis\programs\hipNSearch\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cuNSearch.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cuNSearch</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\projects\master_thesis\programs\hipNSearch\include;D:\projects\master_thesis\programs\hipNSearch\Utils;D:\projects\master_thesis\programs\hipNSearch\build\cuNSearch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);__clang__;__HIP__;WIN32;_WINDOWS;DEBUG;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+	  <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+	  <DebugInformationLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GGDB3</DebugInformationLevel>
+      <EmitMacroDebugInfo Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</EmitMacroDebugInfo>
+      <WavefrontSize Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">32</WavefrontSize>
+      <DebugInfoForProfiling Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DebugInfoForProfiling>
+      <HeapMemoryProfiling Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</HeapMemoryProfiling>
+      <WarnOnDeprecatedConstructs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</WarnOnDeprecatedConstructs>
+      <NoCrashDiagnostics Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</NoCrashDiagnostics>
+      <NoDeprecatedDeclarations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</NoDeprecatedDeclarations>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);__clang__;__HIP__;WIN32;_DEBUG;_WINDOWS;DEBUG;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\projects\master_thesis\programs\hipNSearch\include;D:\projects\master_thesis\programs\hipNSearch\Utils;D:\projects\master_thesis\programs\hipNSearch\build\cuNSearch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\projects\master_thesis\programs\hipNSearch\include;D:\projects\master_thesis\programs\hipNSearch\Utils;D:\projects\master_thesis\programs\hipNSearch\build\cuNSearch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+	<Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\projects\master_thesis\programs\hipNSearch\include;D:\projects\master_thesis\programs\hipNSearch\Utils;D:\projects\master_thesis\programs\hipNSearch\build\cuNSearch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);__clang__;__HIP__;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+	  <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);__clang__;__HIP__;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\projects\master_thesis\programs\hipNSearch\include;D:\projects\master_thesis\programs\hipNSearch\Utils;D:\projects\master_thesis\programs\hipNSearch\build\cuNSearch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\projects\master_thesis\programs\hipNSearch\include;D:\projects\master_thesis\programs\hipNSearch\Utils;D:\projects\master_thesis\programs\hipNSearch\build\cuNSearch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+	<Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\include\PointSet.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\include\ActivationTable.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\include\Common.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\include\cuNSearch.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\Types.h.hip" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchDeviceData.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\GridInfo.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\NotImplementedException.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\PointSetImplementation.h" />
+    <None Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchKernels.cuh.hip">
+    </None>
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\helper_linearIndex.h.hip" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\src\helper_mortonCode.h.hip" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\Utils\cuda_helper.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\Utils\Timing.h" />
+    <ClInclude Include="D:\projects\master_thesis\programs\hipNSearch\Utils\IDFactory.h" />
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\src\PointSet.cu.hip" />
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\src\PointSetImplementation.cu.hip" />
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearch.cu.hip" />
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchDeviceData.cu.hip" />
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\src\cuNSearchKernels.cu.hip" />
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\Utils\cuda_helper.cu.hip" />
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\Utils\Timing.cpp" />
+    <ClCompile Include="D:\projects\master_thesis\programs\hipNSearch\Utils\IDFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\projects\master_thesis\programs\hipNSearch\build\ZERO_CHECK.vcxproj">
+      <Project>{6A835033-9062-3894-903C-2601C94D37D7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Condition="'$(PlatformToolset)'=='HIP_clang'" Project="$(VCTargetsPath)\AMD.HIP.Clang.Common.targets" />
+  </ImportGroup>
+</Project>
