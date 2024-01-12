@@ -89,6 +89,19 @@ void testCuNSearch()
 	auto &pointSet = nsearch.point_set(0);
 	auto points = pointSet.GetPoints();
 
+	printf("Print out neighbour indexes\n");
+	for (unsigned int i = 0; i < 3; i++)
+	{
+		Real3 point = ((Real3*)points)[i];
+		auto count = pointSet.n_neighbors(0, i);
+		for (unsigned int j = 0; j < count; j++)
+		{
+			auto neighbor = pointSet.neighbor(0, i, j);
+
+			printf("%d's %d:th is %d\n", i, j, neighbor);
+		}
+	}
+
 	std::cout << "Validate results" << std::endl;
 	for (unsigned int i = 0; i < pointSet.n_points(); i++)
 	{

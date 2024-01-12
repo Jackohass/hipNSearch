@@ -1,0 +1,3 @@
+D:\projects\master_thesis\programs\hipNSearch\build\demo\Debug\cuNSearch_d.lib
+D:\projects\master_thesis\programs\hipNSearch\build\demo\Demo.dir\Debug\Demo.vcxproj.AssemblyReference.cache
+D:\projects\master_thesis\programs\hipNSearch\build\demo\Demo.dir\Debug\Demo.vcxproj.CopyComplete

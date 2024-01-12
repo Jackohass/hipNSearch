@@ -189,7 +189,8 @@ namespace cuNSearch
 		d_NeighborCounts.resize(particleCount);
 
 		kComputeCounts <<<queryPointSetImpl->BlockStartsForParticles, queryPointSetImpl->ThreadsPerBlock >>> (
-			(Real3*)CudaHelper::GetPointer(queryPointSetImpl->d_Particles),
+			//(Real3*)CudaHelper::GetPointer(queryPointSetImpl->d_Particles),
+			thrust::raw_pointer_cast(queryPointSetImpl->d_Particles.data()),
 			static_cast<unsigned int>(queryPointSet.n_points()),
 
 			pointSetImpl->gridInfo,
@@ -231,7 +232,8 @@ namespace cuNSearch
 		USE_TIMING(Timing::startTiming("Execute kNeighborhoodQueryWithCounts"));
 
 		kNeighborhoodQueryWithCounts <<<queryPointSetImpl->BlockStartsForParticles, queryPointSetImpl->ThreadsPerBlock >>> (
-			(Real3*)CudaHelper::GetPointer(queryPointSetImpl->d_Particles),
+			//(Real3*)CudaHelper::GetPointer(queryPointSetImpl->d_Particles),
+			thrust::raw_pointer_cast(queryPointSetImpl->d_Particles.data()),
 			static_cast<unsigned int>(queryPointSet.n_points()),
 
 			pointSetImpl->gridInfo,

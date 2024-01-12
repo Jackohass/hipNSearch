@@ -70,7 +70,6 @@
       <AdditionalIncludeDirectories>D:\projects\master_thesis\programs\hipNSearch\include;D:\projects\master_thesis\programs\hipNSearch\Utils;D:\projects\master_thesis\programs\hipNSearch\build\cuNSearch;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
