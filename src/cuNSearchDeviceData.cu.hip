@@ -170,8 +170,13 @@ namespace cuNSearch
 
 		CudaHelper::CheckLastError();
 		CudaHelper::DeviceSynchronize();
+	}
 
+	void cuNSearchDeviceData::updateSort(PointSet& pointSet)
+	{
+		auto pointSetImpl = pointSet.impl.get();
 		pointSet.sortIndices.resize(pointSetImpl->d_SortIndices.size());
+		pointSet.invSortIndices.resize(pointSet.sortIndices.size());
 		CudaHelper::MemcpyDeviceToHost(CudaHelper::GetPointer(pointSetImpl->d_SortIndices), pointSet.sortIndices.data(), pointSetImpl->d_SortIndices.size());
 	}
 
@@ -262,8 +267,9 @@ namespace cuNSearch
 				hipHostFree(neighborSet.Neighbors);
 			}
 
-			neighborSet.NeighborCountAllocationSize = static_cast<unsigned int>(totalNeighborCount * 1.5);
+			neighborSet.NeighborCountAllocationSize = static_cast<unsigned int>(totalNeighborCount * 1.5 * 1); //64 Increase allocation size to force hip to actually allocate. What the hell HIP?
 			hipHostMalloc(&neighborSet.Neighbors, sizeof(uint) * neighborSet.NeighborCountAllocationSize);
+			CudaHelper::CheckLastError();
 		}
 		if (neighborSet.ParticleCountAllocationSize < particleCount)
 		{
@@ -273,9 +279,11 @@ namespace cuNSearch
 				hipHostFree(neighborSet.Counts);
 			}
 
-			neighborSet.ParticleCountAllocationSize = static_cast<unsigned int>(particleCount * 1.5);
+			neighborSet.ParticleCountAllocationSize = static_cast<unsigned int>(particleCount * 1.5 * 1); //64 Increase allocation size to force hip to actually allocate. What the hell HIP?
 			hipHostMalloc(&neighborSet.Offsets, sizeof(uint) * neighborSet.ParticleCountAllocationSize);
+			CudaHelper::CheckLastError();
 			hipHostMalloc(&neighborSet.Counts, sizeof(uint) * neighborSet.ParticleCountAllocationSize);
+			CudaHelper::CheckLastError();
 		}
 
 		USE_TIMING(Timing::stopTiming(PRINT_STATS));

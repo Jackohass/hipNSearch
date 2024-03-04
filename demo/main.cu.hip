@@ -103,23 +103,29 @@ void testCuNSearch()
 	}
 
 	std::cout << "Validate results" << std::endl;
+	int numCorr = 0;
 	for (unsigned int i = 0; i < pointSet.n_points(); i++)
 	{
 		Real3 point = ((Real3*)points)[i];
 		auto count = pointSet.n_neighbors(0, i);
+		if (i < 22) printf("%d has %d neighbours: ", i, count);
 		for (unsigned int j = 0; j < count; j++)
 		{
 			auto neighbor = pointSet.neighbor(0, i, j);
 			auto diff = point - ((Real3*)points)[neighbor];
 			float squaredLength = diff[0] * diff[0] + diff[1] * diff[1] + diff[2] * diff[2];
 			float distance = sqrt(squaredLength);
+			if (i < 22) printf("%d, ", neighbor);
 
 			if (distance > radius)
 			{
 				throw std::runtime_error("Not a neighbor");
 			}
+			numCorr++;
 		}
+		if (i < 22) printf("\n");
 	}
+	printf("Number of correct neighbours: %d\n", numCorr);
 }
 
 int main(int argc, char* argv[])

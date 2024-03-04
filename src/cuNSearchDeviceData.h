@@ -31,6 +31,9 @@ namespace cuNSearch
 		/** Queries the neighbors in the given point set for all particles in the query point set.
 		*/
 		void computeNeighborhood(PointSet &queryPointSet, PointSet &pointSet, uint neighborListEntry);
+		
+		void cuNSearchDeviceData::updateSort(PointSet& pointSet);
+
 
 	private:
 		Real m_SearchRadius;

@@ -14,6 +14,7 @@ namespace cuNSearch
 		this->m_n = other.m_n;
 		this->m_user_data = other.m_user_data;
 		this->sortIndices = other.sortIndices;
+		this->invSortIndices = other.invSortIndices;
 		this->neighbors = other.neighbors;
 
 		PointSetImplementation *ptr = other.impl.get();

@@ -144,9 +144,15 @@ __global__ void kComputeCounts(
 	Int3 coord = Int3(int(floor(gridCellF.x)), int(floor(gridCellF.y)), int(floor(gridCellF.z)));
 
 	uint neighborCount = 0;
-	for (int z = -1; z < 2; z++)
+	
+	/**/
+	/*for (int z = -1; z < 2; z++)
 		for (int y = -1; y < 2; y++)
-			for (int x = -1; x < 2; x++)
+			for (int x = -1; x < 2; x++)*/
+	const int mult = 1;
+	for (int z = -1 * mult; z < 2 * mult; z++)
+		for (int y = -1 * mult; y < 2 * mult; y++)
+			for (int x = -1 * mult; x < 2 * mult; x++)
 			{
 				Int3 finalCoord = coord + Int3(x, y, z);
 
@@ -163,7 +169,7 @@ __global__ void kComputeCounts(
 					uint &neighborIndex = i;
 					Real3 diff = particles[reversedSortIndices[neighborIndex]] - particle;
 					float squaredDistance = diff.x * diff.x + diff.y * diff.y + diff.z * diff.z;
-					if (squaredDistance < GridInfo.SquaredSearchRadius && squaredDistance > 0.0)
+					if (squaredDistance < GridInfo.SquaredSearchRadius && squaredDistance >= 0.0 && particleIndex != reversedSortIndices[neighborIndex])
 					{
 						neighborCount++;
 					}
@@ -202,9 +208,15 @@ __global__ void kNeighborhoodQueryWithCounts(
 	uint neighborCount = 0;
 	const uint writeOffset = neighborWriteOffsets[particleIndex];
 
-	for (int z = -1; z < 2; z++)
+	
+	/**/
+	/*for (int z = -1; z < 2; z++)
 		for (int y = -1; y < 2; y++)
-			for (int x = -1; x < 2; x++)
+			for (int x = -1; x < 2; x++)*/
+	const int mult = 1;
+	for (int z = -1 * mult; z < 2 * mult; z++)
+		for (int y = -1 * mult; y < 2 * mult; y++)
+			for (int x = -1 * mult; x < 2 * mult; x++)
 			{
 				Int3 finalCoord = coord + Int3(x, y, z);
 
@@ -221,7 +233,7 @@ __global__ void kNeighborhoodQueryWithCounts(
 					uint &neighborIndex = i;
 					Real3 diff = particles[reversedSortIndices[neighborIndex]] - particle;
 					float squaredDistance = diff.x * diff.x + diff.y * diff.y + diff.z * diff.z;
-					if (squaredDistance < GridInfo.SquaredSearchRadius && squaredDistance > 0.0)
+					if (squaredDistance < GridInfo.SquaredSearchRadius && squaredDistance >= 0.0 && particleIndex != reversedSortIndices[neighborIndex])
 					{
 						neighbors[writeOffset + neighborCount] = reversedSortIndices[neighborIndex];
 						neighborCount++;

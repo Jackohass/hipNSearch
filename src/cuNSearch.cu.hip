@@ -107,6 +107,13 @@ namespace cuNSearch
 		USE_TIMING(Timing::stopTiming(PRINT_STATS));
 	}
 
+	void NeighborhoodSearch::sort(PointSet& pointSet)
+	{
+		deviceData->updateSort(pointSet);
+		z_sort();
+		pointSet.sort_field((std::array<Real, 3>*)pointSet.GetPoints());
+	}
+
 	void
 		NeighborhoodSearch::find_neighbors(bool points_changed_)
 	{

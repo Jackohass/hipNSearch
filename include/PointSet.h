@@ -121,7 +121,10 @@ public:
 	* "Neighborhood search" has to be called beforehand.
 	*/
 	template <typename T>
-	void sort_field(T* lst) const;
+	void sort_field(T* lst);
+
+	std::vector<uint> sortIndices;
+	std::vector<uint> invSortIndices;
 
 private:
 	friend NeighborhoodSearch;
@@ -141,22 +144,25 @@ private:
 	bool m_dynamic;		//if false the points do not move and the hash values do not change
 	void *m_user_data;
 
-	std::vector<uint> sortIndices;
 	std::vector<NeighborSet> neighbors;
 };
 
 
 template <typename T>
-void PointSet::sort_field(T* lst) const
+void PointSet::sort_field(T* lst)
 {
 	std::vector<T> tmp(lst, lst + sortIndices.size());
 	std::transform(sortIndices.begin(), sortIndices.end(),
-//#ifdef _MSC_VER
-//		stdext::unchecked_array_iterator<T*>(lst),
-//#else
+		//#ifdef _MSC_VER
+		//		stdext::unchecked_array_iterator<T*>(lst),
+		//#else
 		lst,
-//#endif
-		[&](int i) { return tmp[i]; });
+		//#endif
+		[&](int i)
+		{
+			return tmp[i];
+		}
+	);
 }
 
 
