@@ -24,8 +24,8 @@
 #define PRINT_STATS true
 #define USE_TIMING(x) x;
 #else
-#define PRINT_STATS false
-#define USE_TIMING(x)
+#define PRINT_STATS true
+#define USE_TIMING(x) x;
 #endif
 #include "Timing.h"
 

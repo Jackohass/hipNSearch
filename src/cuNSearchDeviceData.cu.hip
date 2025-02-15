@@ -10,13 +10,6 @@
 #include <thrust/iterator/counting_iterator.h>
 #include <thrust/fill.h>
 
-#ifdef DEBUG
-#define PRINT_STATS true
-#define USE_TIMING(x) x;
-#else
-#define PRINT_STATS false
-#define USE_TIMING(x)
-#endif
 #include "Timing.h"
 
 #include "PointSetImplementation.h"
@@ -26,6 +19,8 @@
 
 namespace cuNSearch
 {
+	USE_TIMING(std::ofstream* graphingData;);
+
 	void cuNSearchDeviceData::computeMinMax(PointSet &pointSet)
 	{
 		if (pointSet.n_points() == 0)
@@ -184,7 +179,8 @@ namespace cuNSearch
 	{
 		if (queryPointSet.n_points() == 0)
 			return;
-	
+
+		USE_TIMING(Timing::startTiming("Compute neighbors"));
 		auto queryPointSetImpl = queryPointSet.impl.get();
 		auto pointSetImpl = pointSet.impl.get();
 
@@ -254,6 +250,7 @@ namespace cuNSearch
 		CudaHelper::CheckLastError();
 		CudaHelper::DeviceSynchronize();
 		USE_TIMING(Timing::stopTiming(PRINT_STATS));
+		USE_TIMING(Timing::stopTiming(PRINT_STATS));
 
 		//Copy data to host
 		USE_TIMING(Timing::startTiming("Neighbor copy from device to host - resize"));
@@ -267,10 +264,12 @@ namespace cuNSearch
 				hipHostFree(neighborSet.Neighbors);
 			}
 
-			neighborSet.NeighborCountAllocationSize = static_cast<unsigned int>(totalNeighborCount * 1.5 * 1); //64 Increase allocation size to force hip to actually allocate. What the hell HIP?
+			neighborSet.NeighborCountAllocationSize = static_cast<unsigned int>(totalNeighborCount);// * 1.5 * 1); //64 Increase allocation size to force hip to actually allocate. What the hell HIP?
 			hipHostMalloc(&neighborSet.Neighbors, sizeof(uint) * neighborSet.NeighborCountAllocationSize);
 			CudaHelper::CheckLastError();
 		}
+		USE_TIMING(Timing::stopTiming(PRINT_STATS));
+		USE_TIMING(Timing::startTiming("Count copy from device to host - resize"));
 		if (neighborSet.ParticleCountAllocationSize < particleCount)
 		{
 			if (neighborSet.ParticleCountAllocationSize != 0)
@@ -279,26 +278,29 @@ namespace cuNSearch
 				hipHostFree(neighborSet.Counts);
 			}
 
-			neighborSet.ParticleCountAllocationSize = static_cast<unsigned int>(particleCount * 1.5 * 1); //64 Increase allocation size to force hip to actually allocate. What the hell HIP?
+			neighborSet.ParticleCountAllocationSize = static_cast<unsigned int>(particleCount);// *1.5 * 1); //64 Increase allocation size to force hip to actually allocate. What the hell HIP?
 			hipHostMalloc(&neighborSet.Offsets, sizeof(uint) * neighborSet.ParticleCountAllocationSize);
 			CudaHelper::CheckLastError();
 			hipHostMalloc(&neighborSet.Counts, sizeof(uint) * neighborSet.ParticleCountAllocationSize);
 			CudaHelper::CheckLastError();
 		}
-
 		USE_TIMING(Timing::stopTiming(PRINT_STATS));
-		USE_TIMING(Timing::startTiming("Neighbor copy from device to host - MemcpyDeviceToHost"));
 
-		if (PRINT_STATS)
+		USE_TIMING(Timing::startTiming("Count copy from device to host - MemcpyDeviceToHost"));
+		CudaHelper::MemcpyDeviceToHost(CudaHelper::GetPointer(d_NeighborCounts), neighborSet.Counts, particleCount);
+		USE_TIMING(Timing::stopTiming(PRINT_STATS));
+
+		USE_TIMING(Timing::startTiming("Neighbor & Offset copy from device to host - MemcpyDeviceToHost"));
+
+		/*if (PRINT_STATS)
 		{
 			int bytesToCopy = totalNeighborCount * 4 + particleCount * 2 * 4;
 			printf("Total neighbors: %d \n", totalNeighborCount);
 			printf("Average neighbors: %d \n", totalNeighborCount / particleCount);
 			printf("Expected amount: %f MB \n", bytesToCopy / (1024.0f * 1024.0f));
-		}
+		}*/
 
 		CudaHelper::MemcpyDeviceToHost(CudaHelper::GetPointer(d_Neighbors), neighborSet.Neighbors, totalNeighborCount);
-		CudaHelper::MemcpyDeviceToHost(CudaHelper::GetPointer(d_NeighborCounts), neighborSet.Counts, particleCount);
 		CudaHelper::MemcpyDeviceToHost(CudaHelper::GetPointer(d_NeighborWriteOffsets), neighborSet.Offsets, particleCount);
 
 		USE_TIMING(Timing::stopTiming(PRINT_STATS));
